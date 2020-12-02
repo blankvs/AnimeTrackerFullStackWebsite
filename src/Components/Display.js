@@ -17,7 +17,9 @@ class Display extends Component {
 
     removeFromList(id) {}
 
-    // Increment and Decrement 
+    increment(id) {}
+
+    decrement(id) {}
 
     render() {
         return(
