@@ -10,14 +10,16 @@ fetchAnime: (req,res) => {
     res.status(200).send(animeDataList)
 },
 addToList: (req,res) => {
-    const{id} = req.params
-    const animeIndex = animeDataList.findIndex(anime => anime.id == id)
-    list.push(animeDataList[animeIndex])
+    const{anime_id, episode} = req.body
+    const anime = animeDataList.find(anime => anime.id == anime_id)
+    anime.episode = +episode//forcing a number
+    console.log(anime)
+    list.push(anime)
     res.status(200).send(list)
 },
 edit: (req,res) => {
     const {id} = req.params
-    const {action} = req.query //requires ? in postman
+    const {action} = req.query //requires ? in postman.
     let newEpisode = null
     const numberIndex = list.findIndex(anime => anime.id == id)
 

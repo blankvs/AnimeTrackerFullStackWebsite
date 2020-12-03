@@ -1,7 +1,8 @@
 import React from 'react'
-import Display from './components/Display'
+import Display from './Components/Display'
 import Header from './Components/Header'
 import './App.css';
+
 
 function App() {
   return (

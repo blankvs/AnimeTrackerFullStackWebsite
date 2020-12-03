@@ -17,7 +17,7 @@ const animeDataList = [
     {
         id: 4,
         name: "Akame ga Kill",
-        episode: 0
+        episode: 0 
     },
     {
         id: 5,

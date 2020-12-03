@@ -11,7 +11,7 @@ app.use(express.json())
 app.get('/api/anime', GetterCtrl.fetchAnime)
 
 //ListCtrl endpoints
-app.post('/api/list/:id', ListCtrl.addToList)
+app.post('/api/list/', ListCtrl.addToList)
 app.put('/api/list/:id', ListCtrl.edit)
 app.delete('/api/list/:id',ListCtrl.remove)
 
